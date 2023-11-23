@@ -15,9 +15,6 @@ import torch.nn.functional as F
 from INFORMS23_UTILS import CustomDataset, CosineAnnealingWarmUpRestarts, EarlyStopping, str2bool, he_init_normal, pot, dspot
 from INFORMS23_MODEL import C_AutoEncoder, Deep_SVDD
 
-import warnings
-warnings.filterwarnings("ignore")
-
 
 class TrainerDeepSVDD:
     def __init__(self, config):
